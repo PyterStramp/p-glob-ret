@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #2c4050;
+    --secondary-color: #3485db;  
+    --accent-color: #ecf1ed;     
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.media-container {
+    background: var(--accent-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.content-text {
+    color: var(--primary-color);
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.resources a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .media-container {
+        margin-bottom: 2rem;
+    }
+}
